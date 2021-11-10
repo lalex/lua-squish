@@ -11,4 +11,4 @@ RUN apk add --no-cache --purge -uU lua5.1 make mercurial \
     && apk del --purge make mercurial \
     && rm -rf /var/cache/apk/* /tmp/*
 
-CMD [ "/usr/local/bin/squish" ]
+ENTRYPOINT [ "/usr/local/bin/squish" ]
